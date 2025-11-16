@@ -66,7 +66,7 @@ export default function MiddleHeader() {
                             <input
                                 type="search"
                                 className="w-full h-11 pl-11 pr-4 rounded-lg border border-gray-200 bg-white placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-[#39B8AD] transition"
-                                placeholder="Search products, categories, brands..."
+                                placeholder="Search"
                                 aria-label="Search"
                             />
                         </label>
