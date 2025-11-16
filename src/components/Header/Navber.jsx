@@ -9,6 +9,7 @@ const Navber = () => {
                 <TbCategory2 size={30} />
                 <h1>Categories</h1>
             </div>
+            <p className="border-r h-7 border-gray-700 -translate-x-20"></p>
             <div className="">
                 <ul className="list-none flex items-center gap-10 -translate-x-30 font-semibold text-xl">
                     <div className="flex items-center">
