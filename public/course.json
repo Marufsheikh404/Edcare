@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "badge": "Free",
+        "title": "React Tutorial Beginners For Skills Building Carrera",
+        "thumbnail": "/images/courses/react.jpg",
+        "lessons": 8,
+        "students": 50,
+        "views": "12K",
+        "instructor": {
+            "name": "Kevin Perry",
+            "role": "Instructor",
+            "avatar": "/images/instructors/kevin.jpg"
+        },
+        "rating": 4.7,
+        "price": 59.0
+    },
+    {
+        "id": 2,
+        "badge": "Free",
+        "title": "Cultural Perspectives in Teaching and Learning Environments",
+        "thumbnail": "/images/courses/cultural.jpg",
+        "lessons": 8,
+        "students": 50,
+        "views": "12K",
+        "instructor": {
+            "name": "Deniel Ross",
+            "role": "Instructor",
+            "avatar": "/images/instructors/deniel.jpg"
+        },
+        "rating": 4.7,
+        "price": 59.0
+    },
+    {
+        "id": 3,
+        "badge": "Free",
+        "title": "Innovative Instructional Strategies for Enhancing Student",
+        "thumbnail": "/images/courses/html.jpg",
+        "lessons": 8,
+        "students": 50,
+        "views": "12K",
+        "instructor": {
+            "name": "Andrew Klip",
+            "role": "Instructor",
+            "avatar": "/images/instructors/andrew.jpg"
+        },
+        "rating": 4.7,
+        "price": 59.0
+    },
+    {
+        "id": 4,
+        "badge": "Free",
+        "title": "Advanced JavaScript Concepts & Best Practices",
+        "thumbnail": "/images/courses/js_advanced.jpg",
+        "lessons": 12,
+        "students": 80,
+        "views": "20K",
+        "instructor": {
+            "name": "Sarah Wilson",
+            "role": "Instructor",
+            "avatar": "/images/instructors/sarah.jpg"
+        },
+        "rating": 4.8,
+        "price": 79.0
+    },
+    {
+        "id": 5,
+        "badge": "Free",
+        "title": "Mastering UI/UX Design Fundamentals",
+        "thumbnail": "/images/courses/uiux.jpg",
+        "lessons": 10,
+        "students": 60,
+        "views": "15K",
+        "instructor": {
+            "name": "James Carter",
+            "role": "Instructor",
+            "avatar": "/images/instructors/james.jpg"
+        },
+        "rating": 4.6,
+        "price": 49.0
+    },
+    {
+        "id": 6,
+        "badge": "Free",
+        "title": "Full-Stack Web Development Roadmap",
+        "thumbnail": "/images/courses/fullstack.jpg",
+        "lessons": 14,
+        "students": 120,
+        "views": "25K",
+        "instructor": {
+            "name": "Emily Stone",
+            "role": "Instructor",
+            "avatar": "/images/instructors/emily.jpg"
+        },
+        "rating": 4.9,
+        "price": 99.0
+    },
+    {
+        "id": 7,
+        "badge": "Free",
+        "title": "Digital Marketing Essentials for Beginners",
+        "thumbnail": "/images/courses/marketing.jpg",
+        "lessons": 6,
+        "students": 40,
+        "views": "9K",
+        "instructor": {
+            "name": "Robert Lee",
+            "role": "Instructor",
+            "avatar": "/images/instructors/robert.jpg"
+        },
+        "rating": 4.5,
+        "price": 39.0
+    },
+    {
+        "id": 8,
+        "badge": "Free",
+        "title": "Python Programming Zero to Hero",
+        "thumbnail": "/images/courses/python.jpg",
+        "lessons": 18,
+        "students": 150,
+        "views": "30K",
+        "instructor": {
+            "name": "Anna Gomez",
+            "role": "Instructor",
+            "avatar": "/images/instructors/anna.jpg"
+        },
+        "rating": 4.9,
+        "price": 89.0
+    },
+    {
+        "id": 9,
+        "badge": "Free",
+        "title": "Data Science Fundamentals with Real Projects",
+        "thumbnail": "/images/courses/datascience.jpg",
+        "lessons": 20,
+        "students": 180,
+        "views": "33K",
+        "instructor": {
+            "name": "Liam Parker",
+            "role": "Instructor",
+            "avatar": "/images/instructors/liam.jpg"
+        },
+        "rating": 4.8,
+        "price": 109.0
+    },
+    {
+        "id": 10,
+        "badge": "Free",
+        "title": "Beginner-Friendly HTML & CSS Crash Course",
+        "thumbnail": "/images/courses/htmlcss.jpg",
+        "lessons": 5,
+        "students": 30,
+        "views": "7K",
+        "instructor": {
+            "name": "Olivia Brown",
+            "role": "Instructor",
+            "avatar": "/images/instructors/olivia.jpg"
+        },
+        "rating": 4.4,
+        "price": 29.0
+    }
+]
