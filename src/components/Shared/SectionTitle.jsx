@@ -8,7 +8,7 @@ const SectionTitle = ({ title, des }) => {
                 dangerouslySetInnerHTML={{ __html: title }}
             />
 
-            {des && <p>{des}</p>}
+            {des && <p className='text-xs text-[#6C706F] leading-relaxed'>{des}</p>}
         </div>
     );
 };

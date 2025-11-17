@@ -3,6 +3,8 @@ import Image from "next/image";
 import image from '../../images/home page/10012.jpg'
 import image2 from '../../images/home page/10013.jpg'
 import image3 from '../../images/icons/10050.png'
+import tv from '../../images/icons/10014.png'
+import ed from '../../images/icons/edu.png'
 import { FiPhoneCall } from "react-icons/fi";
 import SectionTitle from "../Shared/SectionTitle";
 
@@ -34,6 +36,30 @@ export default function AboutPage() {
                     <p className="font-medium">Watch The Video</p>
                 </div>
                 <SectionTitle title={'Over 10 Years in Distant learning for Skill Development'} des={'Compellingly procrastinate equity invested markets with efficient process improvements. actualize mission-critical partnerships with integrated portals. Authoritatively optimize low-risk high-yield metrics and plug-and-play potentialities.'}></SectionTitle>
+
+                <div className="mt-3 flex items-center justify-around">
+                    <div className="flex items-center gap-3">
+                        <div className="bg-white shadow p-3 border border-gray-200 rounded-full"><Image src={tv} alt=""></Image></div>
+                        <div>
+                            <h1 className="text-3xl font-bold text-[#07A698]">9.5+K</h1>
+                            <p className="ct">Total active students <br /> taking
+                                gifted courses</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="flex items-center gap-3">
+                            <div className="bg-white shadow p-3 border border-gray-200 rounded-full"><Image src={ed} alt=""></Image></div>
+                            <div>
+                                <h1 className="text-3xl font-bold text-[#07A698]">6.5+K</h1>
+                                <p className="ct">Total active students <br /> taking
+                                    gifted courses</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="mt-5 flex items-center">
+                    <button className="hidden sm:inline-flex items-center py-2 px-4 rounded-full text-sm font-semibold text-white bg-[#39B8AD] hover:bg-[#2fa79b] transition-shadow shadow-sm">Start Free Trial</button>
+                </div>
             </div>
         </section>
     );
