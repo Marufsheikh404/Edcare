@@ -1,6 +1,7 @@
 import AboutPage from "@/components/Home/About";
 import CoursesPage from "@/components/Home/Courses";
 import HeroSection from "@/components/Home/Hero";
+import Subcribepage from "@/components/Home/Subcribe";
 import WhyChooseUs from "@/components/Home/WhyChooseUs";
 import NewsPage from "@/components/News";
 
@@ -12,7 +13,8 @@ export default function HomePage() {
           <AboutPage></AboutPage>
           <CoursesPage></CoursesPage>
           <WhyChooseUs></WhyChooseUs>
-          <NewsPage></NewsPage>
+          <Subcribepage></Subcribepage>
+           <NewsPage></NewsPage>
     </div>
   );
 }
