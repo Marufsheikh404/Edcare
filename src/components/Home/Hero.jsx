@@ -17,7 +17,7 @@ const HeroSection = () => {
                 <div className="space-y-6">
 
                    
-                    <div className="bg-white rounded-full w-fit px-3 py-2 flex items-center gap-2 shadow-sm">
+                    <div className="bg-white rounded-full border border-gray-200 w-fit px-3 py-2 flex items-center gap-2 shadow-sm">
                         <div className="bg-[#DAF2F0] p-2 rounded-full">
                             <Image src="/images/icons/edu.png" width={20} height={20} alt="edu" />
                         </div>
