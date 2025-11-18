@@ -1,4 +1,5 @@
 import AboutPage from "@/components/Home/About";
+import CategoryPage from "@/components/Home/Category";
 import CoursesPage from "@/components/Home/Courses";
 import HeroSection from "@/components/Home/Hero";
 import InstructorPage from "@/components/Home/Instructor";
@@ -6,8 +7,9 @@ import QuestionPage from "@/components/Home/Question";
 import SkillDev from "@/components/Home/SkillDev";
 import Subcribepage from "@/components/Home/Subcribe";
 import WhyChooseUs from "@/components/Home/WhyChooseUs";
-import JourneyPage from "@/components/Journey";
-import NewsPage from "@/components/News";
+import JourneyPage from "@/components/Home/Journey";
+import NewsPage from "@/components/Home/News";
+
 
 
 export default function HomePage() {
@@ -17,6 +19,7 @@ export default function HomePage() {
           <AboutPage></AboutPage>
           <CoursesPage></CoursesPage>
           <WhyChooseUs></WhyChooseUs>
+          <CategoryPage></CategoryPage>
           <SkillDev></SkillDev>
           <QuestionPage></QuestionPage>
           <InstructorPage></InstructorPage>

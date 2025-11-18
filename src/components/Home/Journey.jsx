@@ -1,11 +1,11 @@
 import React from 'react';
-import image from '../images/home page/10046.png'
-import image2 from '../images/home page/10047.png'
-import image3 from '../images/home page/10048.png'
+import image from '../../images/home page/10046.png'
+import image2 from '../../images/home page/10047.png'
+import image3 from '../../images/home page/10048.png'
 import Image from 'next/image';
-import SectionTitle from './Shared/SectionTitle';
-import image4 from '../images/icons/10049.png'
-import image5 from '../images/icons/10050.png'
+import SectionTitle from '../Shared/SectionTitle';
+import image4 from '../../images/icons/10049.png'
+import image5 from '../../images/icons/10050.png'
 
 const JourneyPage = () => {
     return (
