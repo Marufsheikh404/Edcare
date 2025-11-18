@@ -10,16 +10,16 @@ import image5 from '../images/icons/10050.png'
 const JourneyPage = () => {
     return (
         <div>
-            <div className='grid grid-cols-12 gap-3'>
-                <div className='col-span-3'>
-                    <Image className='rounded-tl-4xl translate-y-10' src={image} alt=''></Image>
+            <div className='grid grid-cols-1 md:grid-cols-12 gap-3'>
+                <div className='md:col-span-3 mb-10 md:mb-0'>
+                    <Image className='rounded-tl-4xl translate-y-10 w-full' src={image} alt=''></Image>
                 </div>
                 <div className='col-span-3 flex flex-col gap-3'>
-                    <Image className='rounded-tr-4xl rounded-bl-4xl' width={300} src={image2} alt=''></Image>
-                    <Image className='rounded-tl-4xl rounded-br-4xl' width={300} src={image3} alt=''></Image>
+                    <Image className='rounded-tr-4xl rounded-bl-4xl w-full' width={300} src={image2} alt=''></Image>
+                    <Image className='rounded-tl-4xl rounded-br-4xl w-full' width={300} src={image3} alt=''></Image>
                 </div>
 
-                <div className='col-span-6 ml-10'>
+                <div className='md:col-span-6 ml-10'>
                     <div className="bg-white rounded-full border border-gray-200 w-fit px-3 py-2 flex items-center gap-2 shadow-sm">
                         <div className="bg-[#DAF2F0] p-2 rounded-full">
                             <Image src="/images/icons/edu.png" width={20} height={20} alt="edu" />
