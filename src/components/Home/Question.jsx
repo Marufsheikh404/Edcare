@@ -55,7 +55,7 @@ const QuestionPage = () => {
                         </div>
 
                 
-                        <div className="absolute left-4 md:-left-6 top-6 md:top-58 transform md:-translate-y-6">
+                        <div className="absolute left-4 md:-left-6 top-60 md:top-58 transform md:-translate-y-6">
                             <div className="w-[280px] md:w-[250px] bg-white rounded-xl border border-gray-200 shadow-2xl p-3">
                                 <h3 className="text-center text-lg font-semibold mb-2">Total Students</h3>
 
@@ -73,7 +73,7 @@ const QuestionPage = () => {
                                         ))}
                                     </div>
 
-                                    {/* count badge */}
+                                   
                                     <div >
                                         <div className="inline-flex items-center justify-center rounded-full px-3 py-1 text-sm font-semibold text-white bg-[#07A698] shadow-md border border-gray-200">
                                             25+
@@ -81,7 +81,7 @@ const QuestionPage = () => {
                                     </div>
                                 </div>
 
-                                {/* subtle progress line */}
+                             
                                 <div className="mt-3 h-2 bg-gray-100 rounded-full overflow-hidden">
                                     <div className="h-full bg-[#07A698] w-[48%] transition-all duration-700" />
                                 </div>
