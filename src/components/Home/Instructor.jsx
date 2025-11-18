@@ -29,6 +29,17 @@ const InstructorPage = () => {
                     </div>
                 </div>
             </div>
+            <div className='my-5 flex flex-wrap gap-3'>
+                <div className="card w-70 h-auto shadow-sm">
+                    <figure className='h-70'>
+                        <Image className='w-full bg-cover' src={card} alt=''></Image>
+                    </figure>
+                    <div className="card-body  text-start">
+                        <h1 className='text-2xl font-bold text-black'>Zaramane Mass Likan</h1>
+                        <h4 className='text-md font-semibold text-[#07A698]'>Online Teachers</h4>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
