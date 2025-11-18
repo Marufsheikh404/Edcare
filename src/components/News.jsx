@@ -25,8 +25,8 @@ const NewsPage = () => {
                 </div>
             </div>
 
-            <div className='flex items-stretch gap-5 my-5'>
-                <div className="card relative flex-1 bg-base-100 image-full w-96 shadow-sm">
+            <div className='flex flex-col lg:flex-row items-stretch gap-5 my-5'>
+                <div className="card relative flex-1 bg-base-100 image-full w-full md:w-96 shadow-sm">
                     <figure>
                         <Image className='transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer' src={card} alt=''></Image>
                     </figure>
@@ -47,7 +47,7 @@ const NewsPage = () => {
                     <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-blue-950/80 to-transparent"></div>
                 </div>
 
-                <div className="card relative flex-1 bg-base-100 image-full w-96 shadow-sm">
+                <div className="card relative flex-1 bg-base-100 image-full w-full md:w-96 shadow-sm">
                     <figure>
                         <Image className='transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer' src={card2} alt=''></Image>
                     </figure>
@@ -65,7 +65,7 @@ const NewsPage = () => {
                             </div>
                         </div>
                     </div>
-                     <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-blue-950/80 to-transparent"></div>
+                     <div className="absolute bottom-0 left-0 w-full h-20 bg-linear-to-t from-blue-950/80 to-transparent"></div>
                 </div>
             </div>
         </div>

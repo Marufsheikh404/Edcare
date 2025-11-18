@@ -9,7 +9,7 @@ import bg from '../../images/icons/10054.png'
 const Subcribepage = () => {
     return (
         <section className="lg:py-10" >
-            <div className='flex gap-3 p-10 rounded-md' style={{backgroundImage:`url(${bg.src})`}}>
+            <div className='flex flex-col lg:flex-row gap-3 p-10 rounded-md' style={{backgroundImage:`url(${bg.src})`}}>
                 <div className="">
                     <div className="md:col-span-7 relative">
                         <div className="w-full rounded-[18px] overflow-hidden">
