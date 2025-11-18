@@ -10,57 +10,89 @@ import SectionTitle from "../Shared/SectionTitle";
 
 export default function AboutPage() {
     return (
-        <section className="w-full grid grid-cols-12 gap-3 bg-white py-20">
-            <div className="col-span-3 -translate-y-13">
-                <div className="border border-gray-300 p-2 rounded-tr-4xl rounded-bl-4xl"> <Image className="rounded-tr-4xl rounded-bl-4xl w-76" src={image} alt="image"></Image></div>
-                <div className="bg-[#07A698] mt-3 flex items-center rounded-tr-4xl rounded-bl-4xl p-2">
-                    <div className="bg-[#ffffff] rounded-full p-4"> <FiPhoneCall /></div>
-                    <div className="flex flex-col items-center ml-2">
-                        <p className="text-white text-md uppercase ">Online Support</p>
-                        <h1 className="text-white text-2xl font-semibold">+258 152 3659</h1>
+        <section className="w-full bg-white py-20 px-4 md:px-10">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+             
+                <div className="md:col-span-3 flex flex-col items-center md:items-start md:-translate-y-13">
+                    <div className="border border-gray-300 p-2 rounded-tr-4xl rounded-bl-4xl w-full max-w-[250px]">
+                        <Image
+                            className="rounded-tr-4xl rounded-bl-4xl w-full"
+                            src={image}
+                            alt="image"
+                        />
                     </div>
-                </div>
-            </div>
-
-            <div className="col-span-3">
-                <div className="translate-y-20">
-                    <Image className="rounded-tl-4xl rounded-br-4xl w-50" src={image2} alt="image2"></Image>
-                </div>
-            </div>
-
-            <div className="col-span-6">
-                <div className="flex items-center gap-3 cursor-pointer bg-white shadow-lg p-2 border border-gray-200 w-50 rounded-full justify-center">
-                    <div className="cp-3 rounded-full shadow">
-                        <Image src={image3} width={15} alt="logo"></Image>
-                    </div>
-                    <p className="font-medium">Watch The Video</p>
-                </div>
-                <SectionTitle title={'Over 10 Years in Distant learning for Skill Development'} des={'Compellingly procrastinate equity invested markets with efficient process improvements. actualize mission-critical partnerships with integrated portals. Authoritatively optimize low-risk high-yield metrics and plug-and-play potentialities.'}></SectionTitle>
-
-                <div className="mt-3 flex items-center justify-around">
-                    <div className="flex items-center gap-3">
-                        <div className="bg-white shadow p-3 border border-gray-200 rounded-full"><Image src={tv} alt=""></Image></div>
-                        <div>
-                            <h1 className="text-3xl font-bold text-[#07A698]">9.5+K</h1>
-                            <p className="ct">Total active students <br /> taking
-                                gifted courses</p>
+                    <div className="bg-[#07A698] mt-3 flex items-center rounded-tr-4xl rounded-bl-4xl p-2 w-full max-w-[250px]">
+                        <div className="bg-white rounded-full p-4">
+                            <FiPhoneCall />
+                        </div>
+                        <div className="flex flex-col items-start ml-3">
+                            <p className="text-white text-md uppercase">Online Support</p>
+                            <h1 className="text-white text-2xl font-semibold">+258 152 3659</h1>
                         </div>
                     </div>
-                    <div>
+                </div>
+
+                
+                <div className="md:col-span-3 flex justify-center md:justify-start mt-10 md:mt-0">
+                    <Image
+                        className="rounded-tl-4xl rounded-br-4xl  "
+                        src={image2}
+                        alt="image2"
+                    />
+                </div>
+
+                
+                <div className="md:col-span-6 flex flex-col gap-5 mt-10 md:mt-0">
+                    <div className="flex items-center gap-3 cursor-pointer bg-white shadow-lg p-2 border border-gray-200 w-full max-w-[300px] rounded-full  mx-auto md:mx-0">
+                        <div className="rounded-full shadow p-3">
+                            <Image src={image3} width={30} height={30} alt="logo" />
+                        </div>
+                        <p className="font-medium">Watch The Video</p>
+                    </div>
+
+                    <SectionTitle
+                        title={'Over 10 Years in Distant Learning for Skill Development'}
+                        des={
+                            'Compellingly procrastinate equity invested markets with efficient process improvements. Actualize mission-critical partnerships with integrated portals. Authoritatively optimize low-risk high-yield metrics and plug-and-play potentialities.'
+                        }
+                    />
+
+                    <div className="mt-3 flex flex-col sm:flex-row items-center justify-around gap-5">
                         <div className="flex items-center gap-3">
-                            <div className="bg-white shadow p-3 border border-gray-200 rounded-full"><Image src={ed} alt=""></Image></div>
+                            <div className="bg-white shadow p-3 border border-gray-200 rounded-full">
+                                <Image src={tv} alt="" />
+                            </div>
+                            <div>
+                                <h1 className="text-3xl font-bold text-[#07A698]">9.5+K</h1>
+                                <p className="ct text-center sm:text-left">
+                                    Total active students <br />
+                                    taking gifted courses
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center gap-3">
+                            <div className="bg-white shadow p-3 border border-gray-200 rounded-full">
+                                <Image src={ed} alt="" />
+                            </div>
                             <div>
                                 <h1 className="text-3xl font-bold text-[#07A698]">6.5+K</h1>
-                                <p className="ct">Total active students <br /> taking
-                                    gifted courses</p>
+                                <p className="ct text-center sm:text-left">
+                                    Total active students <br />
+                                    taking gifted courses
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="mt-5 flex items-center">
-                    <button className="hidden sm:inline-flex items-center py-2 px-4 rounded-full text-sm font-semibold text-white bg-[#39B8AD] hover:bg-[#2fa79b] transition-shadow shadow-sm">Start Free Trial</button>
+
+                    <div className="mt-5 flex justify-center md:justify-start">
+                        <button className="inline-flex items-center py-2 px-4 rounded-full text-sm font-semibold text-white bg-[#39B8AD] hover:bg-[#2fa79b] transition-shadow shadow-sm">
+                            Start Free Trial
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
+
     );
 }
