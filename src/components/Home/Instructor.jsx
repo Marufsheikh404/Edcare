@@ -14,7 +14,7 @@ import card3 from '../../images/home page/10045.png'
 
 const InstructorPage = () => {
     return (
-        <div className="py-15">
+        <div className="py-15 bg-[#F0FCFF]">
             <div className="place-items-center mb-6 text-center">
                 <div className="bg-white rounded-full border border-gray-200 w-fit px-3 py-2 inline-flex items-center gap-2 shadow-sm">
                     <div className="bg-[#DAF2F0] p-2 rounded-full">
