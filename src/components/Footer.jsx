@@ -1,13 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import { FiMail } from "react-icons/fi";
-import { FiPhone, FiMapPin } from "react-icons/fi";
+import { FiPhone, } from "react-icons/fi";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import imgae from '../images/home page/10058.png'
+import imgae1 from '../images/home page/10059.png'
 
 export default function NewsletterFooter() {
     return (
-        <div className="w-full bg-[#0f2622] text-white px-6 md:px-16 lg:px-28 py-20">
-            {/* Newsletter Section */}
+        <div className="w-full bg-[#0f2622] text-white px-4 md:px-6 py-20">
             <div className="w-full bg-[#11312c] border border-[#1e453e] rounded-2xl p-10 flex flex-col lg:flex-row items-center justify-between gap-6">
                 <div>
                     <h2 className="text-2xl md:text-3xl font-semibold">Subscribe Our Newsletter For</h2>
@@ -29,9 +30,9 @@ export default function NewsletterFooter() {
                 </div>
             </div>
 
-            {/* Footer Widgets */}
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-20">
-                {/* Get in Touch */}
+            
                 <div>
                     <h3 className="text-lg font-semibold mb-3">GET IN TOUCH</h3>
                     <p className="text-sm text-gray-300 mb-4">
@@ -48,7 +49,6 @@ export default function NewsletterFooter() {
                     </div>
                 </div>
 
-                {/* Company Info */}
                 <div>
                     <h3 className="text-lg font-semibold mb-3">COMPANY INFO</h3>
                     <ul className="space-y-2 text-sm text-gray-300">
@@ -60,7 +60,6 @@ export default function NewsletterFooter() {
                     </ul>
                 </div>
 
-                {/* Useful Links */}
                 <div>
                     <h3 className="text-lg font-semibold mb-3">USEFUL LINKS</h3>
                     <ul className="space-y-2 text-sm text-gray-300">
@@ -72,12 +71,11 @@ export default function NewsletterFooter() {
                     </ul>
                 </div>
 
-                {/* Recent Post */}
                 <div>
                     <h3 className="text-lg font-semibold mb-3">RECENT POST</h3>
                     <div className="space-y-4">
                         <div className="flex gap-4 items-start">
-                            <div className="w-16 h-16 bg-gray-700 rounded-lg"></div>
+                            <div className="w-16 h-16 bg-gray-700 rounded-lg"><Image className="h-16" src={imgae1} alt=""></Image></div>
                             <div>
                                 <p className="text-sm mb-1 hover:text-[#1dbf73] cursor-pointer">Where Dreams Find A Home</p>
                                 <span className="text-xs text-gray-400">20 April, 2025</span>
@@ -85,7 +83,7 @@ export default function NewsletterFooter() {
                         </div>
 
                         <div className="flex gap-4 items-start">
-                            <div className="w-16 h-16 bg-gray-700 rounded-lg"></div>
+                            <div className="w-16 h-16 bg-gray-700 rounded-lg"><Image className="h-16" src={imgae} alt=""></Image></div>
                             <div>
                                 <p className="text-sm mb-1 hover:text-[#1dbf73] cursor-pointer">Where Dreams Find A Home</p>
                                 <span className="text-xs text-gray-400">20 April, 2025</span>
@@ -95,7 +93,6 @@ export default function NewsletterFooter() {
                 </div>
             </div>
 
-            {/* Copyright */}
             <div className="text-center text-gray-400 text-sm mt-16 border-t border-[#1e453e] pt-6">
                 Copyright © 2025 EdCare. All Rights Reserved.
             </div>
