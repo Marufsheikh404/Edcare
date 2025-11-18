@@ -14,7 +14,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
              
                 <div className="md:col-span-3 flex flex-col items-center md:items-start md:-translate-y-13">
-                    <div className="border border-gray-300 p-2 rounded-tr-4xl rounded-bl-4xl w-full max-w-[250px]">
+                    <div className="border border-gray-300 p-2 rounded-tr-4xl rounded-bl-4xl w-full md:max-w-[250px]">
                         <Image
                             className="rounded-tr-4xl rounded-bl-4xl w-full"
                             src={image}
@@ -35,7 +35,7 @@ export default function AboutPage() {
                 
                 <div className="md:col-span-3 flex justify-center md:justify-start mt-10 md:mt-0">
                     <Image
-                        className="rounded-tl-4xl rounded-br-4xl  "
+                        className="rounded-tl-4xl rounded-br-4xl w-full "
                         src={image2}
                         alt="image2"
                     />
