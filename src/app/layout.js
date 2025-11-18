@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
+import NewsletterFooter from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         <main className="max-w-7xl mx-auto py-2 px-4">
           {children}
         </main>
+        <NewsletterFooter></NewsletterFooter>
       </body>
     </html>
   );

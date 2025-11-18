@@ -3,6 +3,7 @@ import CoursesPage from "@/components/Home/Courses";
 import HeroSection from "@/components/Home/Hero";
 import InstructorPage from "@/components/Home/Instructor";
 import QuestionPage from "@/components/Home/Question";
+import SkillDev from "@/components/Home/SkillDev";
 import Subcribepage from "@/components/Home/Subcribe";
 import WhyChooseUs from "@/components/Home/WhyChooseUs";
 import JourneyPage from "@/components/Journey";
@@ -16,6 +17,7 @@ export default function HomePage() {
           <AboutPage></AboutPage>
           <CoursesPage></CoursesPage>
           <WhyChooseUs></WhyChooseUs>
+          <SkillDev></SkillDev>
           <QuestionPage></QuestionPage>
           <InstructorPage></InstructorPage>
           <JourneyPage></JourneyPage>
