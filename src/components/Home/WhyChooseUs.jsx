@@ -41,14 +41,14 @@ export default function WhyChooseUs() {
     return (
         <section className="py-20">
             <div
-                className="w-full h-full bg-cover bg-center flex flex-col items-center justify-start p-3"
+                className="w-full h-full bg-cover bg-center flex flex-col items-center justify-start p-3 my-3"
                 style={{
                     backgroundImage: `url(${bg.src})`,
                 }}
             >
              
                 <div className="flex flex-col items-center">
-                    <div className="bg-white border border-gray-200 rounded-full w-fit px-3 py-2 flex items-center gap-2 shadow-sm mb-2">
+                    <div className="bg-white my-5 md:my-0 border border-gray-200 rounded-full w-fit px-3 py-2 flex items-center gap-2 shadow-sm mb-2">
                         <div className="bg-[#DAF2F0] p-2 rounded-full">
                             <Image src={ed} width={20} height={20} alt="edu" />
                         </div>
