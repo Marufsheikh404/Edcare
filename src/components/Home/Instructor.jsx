@@ -28,7 +28,7 @@ const InstructorPage = () => {
 
             <div className="my-5 flex items-center justify-center flex-wrap gap-3">
 
-                <div className="w-72 h-auto shadow-sm">
+                <div className="w-full md:w-72 h-auto shadow-sm">
 
                     <div className="relative overflow-hidden rounded-md group">
 
@@ -38,7 +38,7 @@ const InstructorPage = () => {
                                 alt="Zaramane Mass Likan"
                                 fill
                                 sizes="(max-width: 768px) 100vw, 400px"
-                                className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                                className="bg-contain md:object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
                             />
 
                             <div className="absolute inset-0 bg-black/0 transition-colors duration-300 ease-in-out group-hover:bg-black/25 pointer-events-none" />
@@ -82,7 +82,7 @@ const InstructorPage = () => {
                     </div>
                 </div>
 
-                <div className="w-72 h-auto shadow-sm">
+                <div className="w-full md:w-72 h-auto shadow-sm">
 
                     <div className="relative overflow-hidden rounded-md group">
 
@@ -92,7 +92,7 @@ const InstructorPage = () => {
                                 alt="Amelia Grace Lily"
                                 fill
                                 sizes="(max-width: 768px) 100vw, 400px"
-                                className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                                className="bg-contain md:object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
                             />
 
                             <div className="absolute inset-0 bg-black/0 transition-colors duration-300 ease-in-out group-hover:bg-black/25 pointer-events-none" />
@@ -136,7 +136,7 @@ const InstructorPage = () => {
                     </div>
                 </div>
 
-                <div className="w-72 h-auto shadow-sm">
+                <div className="w-full md:w-72 h-auto shadow-sm">
 
                     <div className="relative overflow-hidden rounded-md group">
 
@@ -146,7 +146,7 @@ const InstructorPage = () => {
                                 alt="Zaramane Mass Likan"
                                 fill
                                 sizes="(max-width: 768px) 100vw, 400px"
-                                className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                                className="bg-contain md:object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
                             />
 
                             <div className="absolute inset-0 bg-black/0 transition-colors duration-300 ease-in-out group-hover:bg-black/25 pointer-events-none" />
@@ -190,7 +190,7 @@ const InstructorPage = () => {
                     </div>
                 </div>
 
-                <div className="w-72 h-auto shadow-sm">
+                <div className="w-full md:w-72 h-auto shadow-sm">
 
                     <div className="relative overflow-hidden rounded-md group">
 
@@ -200,7 +200,7 @@ const InstructorPage = () => {
                                 alt="Zaramane Mass Likan"
                                 fill
                                 sizes="(max-width: 768px) 100vw, 400px"
-                                className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                                className="bg-contain md:object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
                             />
 
                             <div className="absolute inset-0 bg-black/0 transition-colors duration-300 ease-in-out group-hover:bg-black/25 pointer-events-none" />
