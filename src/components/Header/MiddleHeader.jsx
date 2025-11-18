@@ -7,6 +7,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { GiSelfLove } from "react-icons/gi";
 import { PiShoppingCartThin } from "react-icons/pi";
 import { FiSearch } from "react-icons/fi";
+import logo from '../../images/icons/logo.png'
 
 export default function MiddleHeader() {
     const [catOpen, setCatOpen] = useState(false);
@@ -19,7 +20,7 @@ export default function MiddleHeader() {
                 <div className="flex items-center gap-4 min-w-0">
                         <div className="relative w-36 h-12 md:w-44 md:h-14">
                             <Image
-                                src="/images/icons/logo.png"
+                                src={logo}
                                 alt="logo"
                                 fill
                                 style={{ objectFit: "contain" }}

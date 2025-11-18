@@ -9,7 +9,6 @@ import Link from "next/link";
 const Navber = () => {
     const [open, setOpen] = useState(false);
 
-    // Menu items with paths
     const menuItems = [
         { name: "Home", path: "/" },
         { name: "Course", path: "/course" },

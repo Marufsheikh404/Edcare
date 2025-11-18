@@ -7,6 +7,11 @@ import hero from "../../images/home page/10010.png";
 import bg from "../../images/icons/10004.png";
 import logo from "../../images/icons/10011.png";
 import { motion } from "framer-motion";
+import icon from '../../images/icons/edu.png'
+import sm from '../../images/small-image/10008.png'
+import sm2 from '../../images/small-image/10032.png'
+import sm3 from '../../images/small-image/10038.png'
+import sm4 from '../../images/small-image/10036.png'
 
 const HeroSection = () => {
     return (
@@ -19,7 +24,7 @@ const HeroSection = () => {
                    
                     <div className="bg-white rounded-full border border-gray-200 w-fit px-3 py-2 flex items-center gap-2 shadow-sm">
                         <div className="bg-[#DAF2F0] p-2 rounded-full">
-                            <Image src="/images/icons/edu.png" width={20} height={20} alt="edu" />
+                            <Image src={icon} width={20} height={20} alt="edu" />
                         </div>
                         <p className="text-sm font-medium text-gray-600">
                             Welcome To Online Education
@@ -50,25 +55,25 @@ const HeroSection = () => {
                         <div className="flex items-center relative w-24 h-10">
                             <Image
                                 width={36} height={36}
-                                src="/images/small-image/10006.png"
+                                src={sm}
                                 alt="student"
                                 className="rounded-full border-2 border-white shadow"
                             />
                             <Image
                                 width={36} height={36}
-                                src="/images/small-image/10007.png"
+                                src={sm2}
                                 alt="student"
                                 className="rounded-full absolute left-6 border-2 border-white shadow"
                             />
                             <Image
                                 width={36} height={36}
-                                src="/images/small-image/10008.png"
+                                src={sm3}
                                 alt="student"
                                 className="rounded-full absolute left-12 border-2 border-white shadow"
                             />
                             <Image
                                 width={36} height={36}
-                                src="/images/small-image/10009.png"
+                                src={sm4}
                                 alt="student"
                                 className="rounded-full absolute left-[72px] border-2 border-white shadow"
                             />
