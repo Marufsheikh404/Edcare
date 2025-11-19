@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import NewsletterFooter from "@/components/Footer";
 import 'aos/dist/aos.css';
+import AuthProvider from "@/providers/AuthProvider";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +25,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Header></Header>
-        <main className="max-w-7xl mx-auto py-2 px-4">
-          {children}
-        </main>
-        <NewsletterFooter></NewsletterFooter>
+        <AuthProvider>
+          <Header />
+          <main className="max-w-7xl mx-auto py-2 px-4">
+            {children}
+          </main>
+          <NewsletterFooter />
+        </AuthProvider>
       </body>
     </html>
   );
