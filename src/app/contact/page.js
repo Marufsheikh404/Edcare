@@ -5,8 +5,12 @@ import { useForm } from 'react-hook-form';
 import { FaPhone } from 'react-icons/fa';
 import { FaMap, FaStopwatch } from 'react-icons/fa6';
 import { FiChevronDown, FiMail, FiMessageSquare, FiUser } from 'react-icons/fi';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const ContactPage = () => {
+    const notify = () => toast("Wow SuccessFully");
     const {
         register,
         handleSubmit,
@@ -17,11 +21,13 @@ const ContactPage = () => {
     const [status, setStatus] = useState(null);
 
     async function onSubmit(data) {
-        console.log(data);
+        reset();
+        notify();
     }
     return (
         <div>
             <section className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
+
 
                 <div className="bg-white rounded-2xl border p-8 shadow-sm">
                     <SectionTitle title={'Leave A Reply'} des={'Fill-up The Form and Message us of your amazing question'}></SectionTitle>
@@ -68,9 +74,9 @@ const ContactPage = () => {
                                 <option value="" disabled>
                                     Select Subject
                                 </option>
-                                <option>General Query</option>
-                                <option>Support</option>
-                                <option>Business</option>
+                                <option>Development</option>
+                                <option>Marketing</option>
+                                <option>AI Development</option>
                             </select>
                             <FiChevronDown className="absolute right-3 top-3 text-[#07A698]" size={20} />
                         </label>
@@ -146,6 +152,7 @@ const ContactPage = () => {
                         </div>
                     </div>
                 </aside>
+                <ToastContainer />
             </section>
         </div>
     );
