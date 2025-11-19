@@ -44,7 +44,7 @@ const NewsPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-blue-950/80 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 w-full h-20 bg-linear-to-t from-blue-950/80 to-transparent"></div>
                 </div>
 
                 <div className="card relative flex-1 bg-base-100 image-full w-full md:w-96 shadow-sm">
