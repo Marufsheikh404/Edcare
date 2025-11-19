@@ -16,21 +16,16 @@ export default function MiddleHeader() {
         <header className="w-full bg-white shadow-sm">
             <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
 
-              
+                {/* Logo + Category */}
                 <div className="flex items-center gap-4 min-w-0">
-                        <div className="relative w-36 h-12 md:w-44 md:h-14">
-                            <Image
-                                src={logo}
-                                alt="logo"
-                                fill
-                                style={{ objectFit: "contain" }}
-                                priority
-                            />
-                        </div>
+                    {/* Logo */}
+                    <div className="relative w-36 h-12 md:w-44 md:h-14">
+                        <Image src={logo} alt="logo" fill style={{ objectFit: "contain" }} priority />
+                    </div>
 
-        
+                    {/* Category dropdown */}
                     <div
-                        className="relative hidden md:flex items-center gap-2 cursor-pointer select-none"
+                        className="relative hidden md:flex items-center gap-2 select-none"
                         onMouseEnter={() => setCatOpen(true)}
                         onMouseLeave={() => setCatOpen(false)}
                         aria-haspopup="true"
@@ -39,24 +34,23 @@ export default function MiddleHeader() {
                             <BiCategory size={20} />
                             <span className="font-medium text-sm text-gray-800">Category</span>
                             <IoIosArrowForward
-                                className={`text-gray-500 transition-transform ${catOpen ? "rotate-90" : "rotate-0"
-                                    }`}
+                                className={`text-gray-500 transition-transform duration-300 ${catOpen ? "rotate-90" : "rotate-0"}`}
                             />
                         </div>
 
-                    
-                        {catOpen && (
-                            <ul className="absolute left-0 top-full mt-2 w-56 bg-white border border-gray-100 rounded-lg shadow-lg overflow-hidden z-20">
-                                <li className="px-4 py-2 hover:bg-gray-50 cursor-pointer">Electronics</li>
-                                <li className="px-4 py-2 hover:bg-gray-50 cursor-pointer">Clothing</li>
-                                <li className="px-4 py-2 hover:bg-gray-50 cursor-pointer">Home & Living</li>
-                                <li className="px-4 py-2 hover:bg-gray-50 cursor-pointer">Beauty</li>
-                            </ul>
-                        )}
+                        {/* Dropdown menu */}
+                        <ul
+                            className={`absolute left-0 top-full mt-2 w-56 bg-white border border-gray-100 rounded-lg shadow-lg overflow-hidden z-20 transition-all duration-200
+              ${catOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
+                        >
+                            {["Electronics", "Clothing", "Home & Living", "Beauty"].map((cat) => (
+                                <li key={cat} className="px-4 py-2 hover:bg-gray-50 cursor-pointer">{cat}</li>
+                            ))}
+                        </ul>
                     </div>
                 </div>
 
-                
+                {/* Search */}
                 <div className="flex-1 px-4">
                     <form className="w-full">
                         <label className="relative block">
@@ -89,7 +83,6 @@ export default function MiddleHeader() {
                     >
                         <PiShoppingCartThin size={20} className="text-gray-700" />
                     </button>
-
 
                     <Link
                         href="/trial"

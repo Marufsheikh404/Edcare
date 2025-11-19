@@ -8,6 +8,7 @@ import cricel2 from '../../images/shadow/cricle2.png'
 import { useEffect, useState } from 'react';
 import BlogCard from '@/components/Shared/BlogCard';
 
+
 const BlogPage = () => {
     const [blogs, setBlogs] = useState([]);
     const [Loading, setLoading] = useState(true);
@@ -30,6 +31,8 @@ const BlogPage = () => {
         loadData();
         return () => { mounted = false; };
     }, [])
+
+
     return (
         <div>
             <div className='relative'>
@@ -40,19 +43,21 @@ const BlogPage = () => {
                     <Image className='absolute right-0 top-0 text-[#2FA79B]' src={cricel2} alt='shadow'></Image>
                     <div className='absolute left-65 z-10 top-30'>
                         <h1 className='text-5xl font-bold'>Blogs Grid</h1>
-                        <p className='flex items-center gap-2 mt-3'>
-                            <h3 className='text-xl font-semibold'><Link href={'/'}>Home</Link></h3>
-                            /
-                            <span className='text-xl font-semibold text-[#2FA79B]'>Blogs Grid</span>
-                        </p>
+                        <div className="flex items-center gap-2 mt-3">
+                            <h3 className="text-xl font-semibold">
+                                <Link href={'/'}>Home</Link>
+                            </h3>
+                            <span>/</span>
+                            <span className="text-xl font-semibold text-[#2FA79B]">Blogs Grid</span>
+                        </div>
                     </div>
                 </div>
                 <div className='absolute top-0 left-0 h-full w-[80%] bg-linear-to-r from-white/80 bg-transparent '></div>
             </div>
 
-            <div>
+            <div  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-20'>
                 {
-                    blogs.map(blog=> <BlogCard key={blog.id} blog ={blog}></BlogCard>)
+                    blogs.map(blog => <BlogCard key={blog.id} blog={blog}></BlogCard>)
                 }
             </div>
         </div>

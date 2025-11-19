@@ -54,7 +54,7 @@ const CoursesPage = () => {
                 {categories.map((item, index) => (
                     <div
                         key={index}
-                        className="flex items-center justify-center w-full md:w-auto  lg:w-[80%] gap-3 bg-white rounded-full shadow-sm border border-gray-200 
+                        className="flex items-center justify-center w-full md:w-auto  lg:w-4/5 gap-3 bg-white rounded-full shadow-sm border border-gray-200 
                        py-2 px-4 cursor-pointer hover:shadow-md hover:bg-[#07A698] transition-all ease-in-out"
                     >
                         <div className="bg-white p-3 rounded-full">
