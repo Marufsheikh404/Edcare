@@ -9,6 +9,7 @@ import Subcribepage from "@/components/Home/Subcribe";
 import WhyChooseUs from "@/components/Home/WhyChooseUs";
 import JourneyPage from "@/components/Home/Journey";
 import NewsPage from "@/components/Home/News";
+import LatestCoursePage from "@/components/Home/LatestCourse";
 
 
 
@@ -19,6 +20,7 @@ export default function HomePage() {
           <AboutPage></AboutPage>
           <CoursesPage></CoursesPage>
           <WhyChooseUs></WhyChooseUs>
+          <LatestCoursePage></LatestCoursePage>
           <CategoryPage></CategoryPage>
           <SkillDev></SkillDev>
           <QuestionPage></QuestionPage>
