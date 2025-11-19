@@ -2,8 +2,8 @@
 import Image from 'next/image';
 import React from 'react';
 import ed from '../../images/icons/edu.png'
-import card from '../../images/home page/10052.jpg'
-import card2 from '../../images/home page/10057.png'
+import card from '../../images/home page/blog8.png'
+import card2 from '../../images/home page/blog1.jpg'
 import { CiStopwatch } from "react-icons/ci";
 import { GoFileDirectory } from "react-icons/go";
 import SectionTitle from '../Shared/SectionTitle';

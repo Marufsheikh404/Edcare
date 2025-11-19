@@ -27,7 +27,7 @@ const CoursePage = () => {
                         </p>
                     </div>
                 </div>
-                <div className='absolute top-0 left-0 h-full w-[80%] bg-gradient-to-r from-white/80 bg-transparent '></div>
+                <div className='absolute top-0 left-0 h-full w-[80%] bg-linear-to-r from-white/80 bg-transparent '></div>
             </div>
 
             <div>

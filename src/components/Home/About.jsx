@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import image from '../../images/home page/10012.jpg'
-import image2 from '../../images/home page/10013.jpg'
+import image from '../../images/home page/blog5.jpg'
+import image2 from '../../images/home page/blog4.png'
 import image3 from '../../images/icons/10050.png'
 import tv from '../../images/icons/10014.png'
 import ed from '../../images/icons/edu.png'

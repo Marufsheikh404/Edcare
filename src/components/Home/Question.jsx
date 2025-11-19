@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import 'aos/dist/aos.css';
 
-import image from '../../images/home page/10037.png';
+import image from '../../images/home page/blog1.jpg';
 import logo from '../../images/icons/edu.png';
 import SectionTitle from '../Shared/SectionTitle';
 import view from '../../images/small-image/10040.png';

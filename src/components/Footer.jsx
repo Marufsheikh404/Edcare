@@ -3,8 +3,8 @@ import Image from "next/image";
 import { FiMail } from "react-icons/fi";
 import { FiPhone, } from "react-icons/fi";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import imgae from '../images/home page/10058.png'
-import imgae1 from '../images/home page/10059.png'
+import imgae from '../images/home page/blog8.png'
+import imgae1 from '../images/home page/blog9.png'
 
 export default function NewsletterFooter() {
     return (

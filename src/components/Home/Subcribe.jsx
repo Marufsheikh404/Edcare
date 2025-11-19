@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import React from 'react';
-import image from '../../images/home page/10055.png'
+import image from '../../images/home page/blog8.png'
 import ed from '../../images/icons/edu.png'
 import SectionTitle from '../Shared/SectionTitle';
 import bg from '../../images/icons/10054.png'

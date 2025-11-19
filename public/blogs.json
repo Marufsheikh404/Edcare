@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "date": "August 15, 2025",
+        "category": "Marketing",
+        "title": "Building Resilience and Empathy in the Classroom",
+        "image": "https://i.ibb.co.com/bjbwxmmr/blog.jpg",
+        "buttonText": "Read More",
+        "link": "#"
+    },
+    {
+        "id": 2,
+        "date": "July 10, 2025",
+        "category": "Education",
+        "title": "Effective Strategies for Student Engagement",
+        "image": "https://i.ibb.co.com/cMs3sg3/blog1.jpg",
+        "buttonText": "Read More",
+        "link": "#"
+    },
+    {
+        "id": 3,
+        "date": "June 22, 2025",
+        "category": "Training",
+        "title": "How to Improve Classroom Collaboration",
+        "image": "https://i.ibb.co.com/W46Hz546/blog2.png",
+        "buttonText": "Read More",
+        "link": "#"
+    },
+    {
+        "id": 4,
+        "date": "May 30, 2025",
+        "category": "Marketing",
+        "title": "The Role of Storytelling in Modern Learning",
+        "image": "https://i.ibb.co.com/5WkPB0dM/blog3.png",
+        "buttonText": "Read More",
+        "link": "#"
+    },
+    {
+        "id": 5,
+        "date": "April 18, 2025",
+        "category": "Leadership",
+        "title": "Developing Leadership Skills in Students",
+        "image": "https://i.ibb.co.com/gLS41f8s/blog4.png",
+        "buttonText": "Read More",
+        "link": "#"
+    },
+    {
+        "id": 6,
+        "date": "March 12, 2025",
+        "category": "Education",
+        "title": "Enhancing Creativity in the Classroom",
+        "image": "https://i.ibb.co.com/Ng73f1RM/blog5.jpg",
+        "buttonText": "Read More",
+        "link": "#"
+    },
+    {
+        "id": 7,
+        "date": "February 2, 2025",
+        "category": "Technology",
+        "title": "Using Digital Tools to Support Learning",
+        "image": "https://i.ibb.co.com/Zv00k5w/blog6.png",
+        "buttonText": "Read More",
+        "link": "#"
+    },
+    {
+        "id": 8,
+        "date": "January 8, 2025",
+        "category": "Marketing",
+        "title": "How Emotional Intelligence Impacts Education",
+        "image": "https://i.ibb.co.com/qTMZ5xQ/blog7.jpg",
+        "buttonText": "Read More",
+        "link": "#"
+    },
+    {
+        "id": 9,
+        "date": "December 22, 2024",
+        "category": "Training",
+        "title": "Creating a Positive Classroom Environment",
+        "image": "https://i.ibb.co.com/ZsLtBKT/blog8.png",
+        "buttonText": "Read More",
+        "link": "#"
+    },
+    {
+        "id": 10,
+        "date": "November 5, 2024",
+        "category": "Education",
+        "title": "Building Communication Skills in Students",
+        "image": "https://i.ibb.co.com/RpC82wj9/blog9.png",
+        "buttonText": "Read More",
+        "link": "#"
+    },
+    {
+        "id": 11,
+        "date": "October 10, 2024",
+        "category": "Leadership",
+        "title": "Helping Students Become Independent Thinkers",
+        "image": "https://i.ibb.co.com/5WkPB0dM/blog3.png",
+        "buttonText": "Read More",
+        "link": "#"
+    },
+    {
+        "id": 12,
+        "date": "September 14, 2024",
+        "category": "Technology",
+        "title": "Gamification Techniques for Learning",
+        "image": "https://i.ibb.co.com/gLS41f8s/blog4.png",
+        "buttonText": "Read More",
+        "link": "#"
+    },
+    {
+        "id": 13,
+        "date": "August 19, 2024",
+        "category": "Education",
+        "title": "How Teachers Can Inspire Confidence",
+        "image": "https://i.ibb.co.com/Zv00k5w/blog6.png",
+        "buttonText": "Read More",
+        "link": "#"
+    },
+    {
+        "id": 14,
+        "date": "July 01, 2024",
+        "category": "Marketing",
+        "title": "The Impact of Social Connection on Learning",
+        "image": "https://i.ibb.co.com/gLS41f8s/blog4.png",
+        "buttonText": "Read More",
+        "link": "#"
+    },
+    {
+        "id": 15,
+        "date": "June 16, 2024",
+        "category": "Training",
+        "title": "Techniques to Boost Student Motivation",
+        "image": "https://i.ibb.co.com/RpC82wj9/blog9.png",
+        "buttonText": "Read More",
+        "link": "#"
+    }
+]
