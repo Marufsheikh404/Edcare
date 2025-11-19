@@ -1,10 +1,14 @@
 "use client";
 import AuthContext from "@/context/AuthContext";
-import React from "react";
+import React, { useState } from "react";
 
 
 const AuthProvider = ({ children }) => {
-    const Info = { name: "maruf" };
+    const [category, setCategory] = useState([]);
+    const [product, setProduct] = useState([]);
+    const Info = {
+
+    };
 
     return (
         <AuthContext.Provider value={Info}>
