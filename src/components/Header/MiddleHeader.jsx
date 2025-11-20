@@ -14,16 +14,16 @@ export default function MiddleHeader() {
 
     return (
         <header className="w-full bg-white shadow-sm">
-            <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+            <div className="max-w-7xl mx-auto px-4 py-1 flex items-center justify-between gap-4">
 
-                {/* Logo + Category */}
+          
                 <div className="flex items-center gap-4 min-w-0">
-                    {/* Logo */}
-                    <div className="relative w-36 h-12 md:w-44 md:h-14">
+               
+                    <div className="relative w-36 h-12 md:w-38 md:h-14">
                         <Image src={logo} alt="logo" fill style={{ objectFit: "contain" }} priority />
                     </div>
 
-                    {/* Category dropdown */}
+                  
                     <div
                         className="relative hidden md:flex items-center gap-2 select-none"
                         onMouseEnter={() => setCatOpen(true)}
@@ -31,17 +31,17 @@ export default function MiddleHeader() {
                         aria-haspopup="true"
                     >
                         <div className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-50 transition">
-                            <BiCategory size={20} />
-                            <span className="font-medium text-sm text-gray-800">Category</span>
+                            <BiCategory className="text-[#2FA79B]" size={20} />
+                            <span className="font-medium text-sm text-[#2FA79B]">Category</span>
                             <IoIosArrowForward
                                 className={`text-gray-500 transition-transform duration-300 ${catOpen ? "rotate-90" : "rotate-0"}`}
                             />
                         </div>
 
-                        {/* Dropdown menu */}
+                       
                         <ul
                             className={`absolute left-0 top-full mt-2 w-56 bg-white border border-gray-100 rounded-lg shadow-lg overflow-hidden z-20 transition-all duration-200
-              ${catOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
+                       ${catOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
                         >
                             {["Electronics", "Clothing", "Home & Living", "Beauty"].map((cat) => (
                                 <li key={cat} className="px-4 py-2 hover:bg-gray-50 cursor-pointer">{cat}</li>
@@ -50,7 +50,7 @@ export default function MiddleHeader() {
                     </div>
                 </div>
 
-                {/* Search */}
+               
                 <div className="flex-1 px-4">
                     <form className="w-full">
                         <label className="relative block">
@@ -68,20 +68,20 @@ export default function MiddleHeader() {
                     </form>
                 </div>
 
-                {/* Right buttons */}
+               
                 <div className="flex items-center gap-3">
                     <button
                         aria-label="Wishlist"
                         className="p-2 rounded-full border border-gray-200 hover:shadow-sm transition bg-white"
                     >
-                        <GiSelfLove size={20} className="text-gray-700" />
+                        <GiSelfLove size={20} className="text-[#2FA79B]" />
                     </button>
 
                     <button
                         aria-label="Cart"
                         className="relative p-2 rounded-full border border-gray-200 hover:shadow-sm transition bg-white"
                     >
-                        <PiShoppingCartThin size={20} className="text-gray-700" />
+                        <PiShoppingCartThin size={20} className="text-[#2FA79B]" />
                     </button>
 
                     <Link

@@ -11,24 +11,24 @@ const TopHeader = () => {
 
                 <div className="hidden lg:flex flex-wrap gap-6 items-center">
                     <div className="flex items-center gap-2">
-                        <PhoneIcon className="w-4 h-4" />
+                        <PhoneIcon className="w-4 h-4 text-[#2FA79B]" />
                         <span>256 214 203 215</span>
                     </div>
 
                     <div className="flex items-center gap-2">
-                        <MapPinIcon className="w-4 h-4" />
+                        <MapPinIcon className="w-4 h-4 text-[#2FA79B]" />
                         <span>258 Helano Street, New York</span>
                     </div>
 
                     <div className="flex items-center gap-2">
-                        <ClockIcon className="w-4 h-4" />
+                        <ClockIcon className="w-4 h-4 text-[#2FA79B]" />
                         <span>Mon - Sat: 8:00 - 15:00</span>
                     </div>
                 </div>
 
                 <div className="flex items-center justify-between gap-6 mt-2 sm:mt-0 w-full lg:w-auto">
                     <div className="flex items-center gap-2 cursor-pointer hover:text-gray-300">
-                        <UserIcon className="w-4 h-4" />
+                        <UserIcon className="w-4 h-4 text-[#2FA79B]" />
                         <span>Login / Register</span>
                     </div>
 
