@@ -1,8 +1,9 @@
 "use client";
 import AuthContext from '@/context/AuthContext';
 import Image from 'next/image';
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import SectionTitle from '../Shared/SectionTitle';
+import Aos from 'aos';
 
 const LatestCoursePage = () => {
     const { categories, courses } = useContext(AuthContext);
@@ -16,14 +17,23 @@ const LatestCoursePage = () => {
         )
         : courses;
 
+    useEffect(() => {
+        Aos.init({
+            duration: 800,
+            easing: 'ease',
+            once: false,
+            mirror: false,
 
+        });
+    }, [])
     return (
         <section>
-            <div className='place-items-center'> <SectionTitle title={'Explore Featured Courses'}></SectionTitle></div>
+            <div data-aos="fade-up" data-aos-duration="2000" className='place-items-center'> <SectionTitle title={'Explore Featured Courses'}></SectionTitle></div>
             <div className="my-10">
                 {/* CATEGORY BUTTONS */}
-                <div className="flex flex-wrap gap-4 items-center justify-center mb-10">
+                <div data-aos="fade-up" data-aos-duration="2000" className="flex flex-wrap gap-4 items-center justify-center mb-10">
                     <button
+                        data-aos="fade-up" data-aos-duration="2000"
                         className={`btn rounded-full px-6 py-2 ${activeCategory === null ? 'bg-[#07A698] text-white' : 'bg-white text-black'}`}
                         onClick={() => setActiveCategory(null)}
                     >
@@ -43,7 +53,7 @@ const LatestCoursePage = () => {
                 {/* COURSE DATA */}
                 <div className="grid gap-10 grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
                     {filteredCourses?.map((c) => (
-                        <div key={c?.id}>
+                        <div data-aos="fade-up" data-aos-duration="3000" key={c?.id}>
                             <div className="card w-full h-auto shadow-md rounded-2xl overflow-hidden bg-white hover:shadow-xl transition flex flex-col">
                                 <figure className="h-48 w-full relative bg-gray-100 overflow-hidden">
                                     <Image

@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import SectionTitle from "../Shared/SectionTitle";
 import Image from "next/image";
 import card from "../../images/home page/10042.png";
@@ -11,24 +11,34 @@ import { FaViber } from "react-icons/fa6";
 import card1 from '../../images/home page/10043.png'
 import card2 from '../../images/home page/10044.png'
 import card3 from '../../images/home page/10045.png'
+import Aos from "aos";
 
 const InstructorPage = () => {
+      useEffect(() => {
+        Aos.init({
+            duration: 800,
+            easing: 'ease',
+            once: false,
+            mirror: false,
+
+        });
+    }, [])
     return (
         <div className="py-15 bg-[#F0FCFF]">
             <div className="place-items-center mb-6 text-center">
-                <div className="bg-white rounded-full border border-gray-200 w-fit px-3 py-2 inline-flex items-center gap-2 shadow-sm">
+                <div data-aos="fade-up" data-aos-duration="2000" className="bg-white rounded-full border border-gray-200 w-fit px-3 py-2 inline-flex items-center gap-2 shadow-sm">
                     <div className="bg-[#DAF2F0] p-2 rounded-full">
                         <Image src={logo} width={20} height={20} alt="edu" />
                     </div>
                     <p className="text-sm font-medium text-gray-600">Welcome To Online Education</p>
                 </div>
 
-                <SectionTitle title={"Explore Our World Best Courses"} />
+               <div data-aos="fade-up" data-aos-duration="2000" className="my-8"> <SectionTitle title={"Explore Our World Best Courses"} /></div>
             </div>
 
             <div className="my-5 flex items-center justify-center flex-wrap gap-3">
 
-                <div className="w-full md:w-72 h-auto shadow-sm">
+                <div data-aos="fade-up" data-aos-duration="2000" className="w-full md:w-72 h-auto shadow-sm">
 
                     <div className="relative overflow-hidden rounded-md group">
 
@@ -82,7 +92,7 @@ const InstructorPage = () => {
                     </div>
                 </div>
 
-                <div className="w-full md:w-72 h-auto shadow-sm">
+                <div data-aos="fade-up" data-aos-duration="2000" className="w-full md:w-72 h-auto shadow-sm">
 
                     <div className="relative overflow-hidden rounded-md group">
 
@@ -136,7 +146,7 @@ const InstructorPage = () => {
                     </div>
                 </div>
 
-                <div className="w-full md:w-72 h-auto shadow-sm">
+                <div data-aos="fade-up" data-aos-duration="2000" className="w-full md:w-72 h-auto shadow-sm">
 
                     <div className="relative overflow-hidden rounded-md group">
 
@@ -190,7 +200,7 @@ const InstructorPage = () => {
                     </div>
                 </div>
 
-                <div className="w-full md:w-72 h-auto shadow-sm">
+                <div data-aos="fade-up" data-aos-duration="2000" className="w-full md:w-72 h-auto shadow-sm">
 
                     <div className="relative overflow-hidden rounded-md group">
 
