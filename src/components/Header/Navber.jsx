@@ -29,10 +29,10 @@ const Navber = () => {
                 </div>
 
                 
-                <p className="border-r h-7 border-gray-500 hidden md:block"></p>
+                <p className="border-r h-7 md:-translate-x-7 border-gray-500 hidden md:block"></p>
 
     
-                <div className="hidden md:block">
+                <div className="hidden md:block md:-translate-x-15">
                     <ul className="flex items-center gap-10 font-semibold text-lg">
                         {menuItems.map((item, i) => (
                             <li key={i} className="flex items-center gap-1 cursor-pointer hover:text-[#07A698]">
