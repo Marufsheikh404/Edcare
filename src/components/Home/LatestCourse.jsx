@@ -63,7 +63,7 @@ const LatestCoursePage = () => {
                                         alt={c?.title || 'image'}
                                         width={500}
                                         height={300}
-                                        className="object-cover w-full h-full"
+                                        className="object-cover w-full h-auto"
                                     />
                                 </figure>
 
