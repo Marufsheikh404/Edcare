@@ -154,7 +154,7 @@ const CoursePage = () => {
                                     <div className="flex items-center justify-between mt-auto text-sm">
                                         <h1 className="font-semibold text-gray-800">Price: $ {c?.price}</h1>
                                         <Link href={`/details/${c?.id}`}>
-                                            <button className="relative flex items-center gap-2 px-4 py-2 rounded-full font-semibold text-gray-800 overflow-hidden group border border-gray-300">
+                                            <button className="relative flex items-center cursor-pointer gap-2 px-4 py-2 rounded-full font-semibold text-gray-800 overflow-hidden group border border-gray-300">
                                                 <span className="absolute inset-0 bg-linear-to-r from-[#39B8AD] to-[#2fa79b] scale-x-0 group-hover:scale-x-100 transform origin-left transition-transform duration-400 rounded-full z-0"></span>
 
                                                 <span className="relative z-10 flex items-center group-hover:text-white gap-2">
