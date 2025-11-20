@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import img from '../../images/home page/10027.png';
 import img1 from '../../images/home page/10029.png';
@@ -9,6 +9,7 @@ import icon1 from '../../images/icons/10026.png';
 import icon2 from '../../images/icons/10028.png';
 import icon3 from '../../images/icons/10030.png';
 import bg from '../../images/icons/10054.png';
+import Aos from "aos";
 
 const items = [
     {
@@ -37,7 +38,16 @@ const items = [
     },
 ];
 
+
 export default function WhyChooseUs() {
+    useEffect(() => {
+        Aos.init({
+            duration: 800,
+            easing: 'ease',
+            once: false,
+            mirror: false,
+        });
+    }, [])
     return (
         <section className="py-20">
             <div
@@ -46,9 +56,9 @@ export default function WhyChooseUs() {
                     backgroundImage: `url(${bg.src})`,
                 }}
             >
-             
+
                 <div className="flex flex-col items-center">
-                    <div className="bg-white my-5 md:my-0 border border-gray-200 rounded-full w-fit px-3 py-2 flex items-center gap-2 shadow-sm mb-2">
+                    <div data-aos="fade-up" data-aos-duration="2000" className="bg-white my-5 md:my-5 border border-gray-200 rounded-full w-fit px-3 py-2 flex items-center gap-2 shadow-sm mb-2">
                         <div className="bg-[#DAF2F0] p-2 rounded-full">
                             <Image src={ed} width={20} height={20} alt="edu" />
                         </div>
@@ -57,24 +67,25 @@ export default function WhyChooseUs() {
                         </p>
                     </div>
 
-                    <h2 className="text-3xl md:text-5xl font-bold mb-12 text-white">
+                    <h2 data-aos="fade-up" data-aos-duration="2000" className="text-3xl md:text-5xl font-bold mb-12 text-white">
                         Explore Yourself All Over The World
                     </h2>
                 </div>
 
-              
+
                 <div className="grid md:grid-cols-3 gap-16 relative z-10">
                     {items.map((item, idx) => (
                         <div
+                            data-aos="fade-up" data-aos-duration="2000"
                             key={item.id}
                             className="flex flex-col items-center text-center relative"
                         >
-                        
+
                             {idx < items.length - 1 && (
-                                <div className="hidden md:block absolute top-1/2 right-[-48px] w-[1px] h-56 bg-white/20 transform -translate-y-1/2" />
+                                <div className="hidden md:block absolute top-1/2 -right-12 w-px h-56 bg-white/20 transform -translate-y-1/2" />
                             )}
 
-                         
+
                             <div className="relative mb-8">
                                 <div className="absolute -top-6 left-1/2 border-2 border-gray-900 -translate-x-1/2 w-16 h-16 rounded-full bg-teal-500 flex items-center justify-center shadow-lg overflow-hidden">
                                     <Image
@@ -98,10 +109,10 @@ export default function WhyChooseUs() {
                                 </div>
                             </div>
 
-                            <h3 className="text-3xl font-semibold mb-3 text-white">
+                            <h3 data-aos="fade-up" data-aos-duration="2000" className="text-3xl font-semibold mb-3 text-white">
                                 {item.title}
                             </h3>
-                            <p className="text-sm text-gray-200 max-w-xs">{item.desc}</p>
+                            <p data-aos="fade-up" data-aos-duration="2000" className="text-sm text-gray-200 max-w-xs">{item.desc}</p>
                         </div>
                     ))}
                 </div>
