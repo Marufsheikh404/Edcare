@@ -10,7 +10,7 @@
         "instructor": {
             "name": "Kevin Perry",
             "role": "Instructor",
-            "avatar": "/images/instructors/kevin.jpg"
+            "avatar": "https://i.ibb.co.com/60rnqS3W/10009.png"
         },
         "rating": 4.7,
         "price": 59.0
@@ -26,7 +26,7 @@
         "instructor": {
             "name": "Deniel Ross",
             "role": "Instructor",
-            "avatar": "/images/instructors/deniel.jpg"
+            "avatar": "https://i.ibb.co.com/0VJcZ16H/10032.png"
         },
         "rating": 4.7,
         "price": 59.0
@@ -42,7 +42,7 @@
         "instructor": {
             "name": "Andrew Klip",
             "role": "Instructor",
-            "avatar": "/images/instructors/andrew.jpg"
+            "avatar": "https://i.ibb.co.com/4n3gDzDM/10036.png"
         },
         "rating": 4.7,
         "price": 59.0
@@ -58,7 +58,7 @@
         "instructor": {
             "name": "Sarah Wilson",
             "role": "Instructor",
-            "avatar": "/images/instructors/sarah.jpg"
+            "avatar": "https://i.ibb.co.com/4n3gDzDM/10036.png"
         },
         "rating": 4.8,
         "price": 79.0
@@ -90,7 +90,7 @@
         "instructor": {
             "name": "Emily Stone",
             "role": "Instructor",
-            "avatar": "/images/instructors/emily.jpg"
+            "avatar": "https://i.ibb.co.com/FCkqpk8/10038.png"
         },
         "rating": 4.9,
         "price": 99.0
@@ -122,7 +122,7 @@
         "instructor": {
             "name": "Anna Gomez",
             "role": "Instructor",
-            "avatar": "/images/instructors/anna.jpg"
+            "avatar": "https://i.ibb.co.com/6JWxRnKV/10039.png"
         },
         "rating": 4.9,
         "price": 89.0
@@ -138,7 +138,7 @@
         "instructor": {
             "name": "Liam Parker",
             "role": "Instructor",
-            "avatar": "/images/instructors/liam.jpg"
+            "avatar": "https://i.ibb.co.com/hJHFjMQt/10040.png"
         },
         "rating": 4.8,
         "price": 109.0
@@ -154,7 +154,7 @@
         "instructor": {
             "name": "Olivia Brown",
             "role": "Instructor",
-            "avatar": "/images/instructors/olivia.jpg"
+            "avatar": "https://i.ibb.co.com/9mqHKdnw/10041.png"
         },
         "rating": 4.4,
         "price": 29.0

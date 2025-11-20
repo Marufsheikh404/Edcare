@@ -10,7 +10,7 @@ const DetailsPage = () => {
     const findCourse = courses?.find(item => item?.id === Number(id));
 
     return (
-        <div className="shadow-md rounded-2xl overflow-hidden bg-[#E8EFF6] hover:shadow-xl transition flex items-center gap-8 p-4">
+        <div className="shadow-md rounded-2xl overflow-hidden bg-[#E8EFF6] hover:shadow-2xl transition flex items-center gap-8 p-4">
             {/* Left: Image */}
             <div className="w-full">
                 <Image
@@ -25,12 +25,12 @@ const DetailsPage = () => {
 
             {/* Right: Content */}
             <div className="p-4 flex flex-col gap-3 w-full h-full relative">
-                <p className="text-xs font-semibold text-[#07A698] bg-[#E6F6F4] rounded-full px-2 py-1 w-fit mb-1">
+                <p className="text-sm font-semibold text-[#07A698] bg-[#E6F6F4] rounded-full px-2 py-1 w-fit mb-1">
                     {findCourse?.badge}
                 </p>
 
 
-                <h2 className="text-lg font-bold leading-snug">{findCourse?.title}</h2>
+                <h2 className="text-2xl font-bold leading-snug">{findCourse?.title}</h2>
 
 
                 <div className="flex items-center gap-4 text-gray-500 text-sm">
@@ -72,7 +72,7 @@ const DetailsPage = () => {
 
                 {/* Add to Cart button - Left bottom */}
                 <div className="mt-auto pt-4">
-                    <button className="bg-[#07A698] text-white px-5 py-2 rounded-lg text-sm hover:bg-[#068a80] transition">
+                    <button className="cursor-pointer bg-[#07A698] text-white px-5 py-2 rounded-lg text-sm hover:bg-[#068a80] transition">
                         Add to Cart
                     </button>
                 </div>

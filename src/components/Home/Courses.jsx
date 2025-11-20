@@ -61,11 +61,11 @@ const CoursesPage = () => {
                 <div data-aos="fade-up" data-aos-duration="2000"> <SectionTitle title={'Select The Industry Where You Want To Learn'} /></div>
             </div>
 
-            <div  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-4 mt-6">
+            <div  className="flex flex-wrap gap-4 px-4 mt-6 items-center justify-center">
                 {categories.map((item, index) => (
                     <div data-aos="fade-up" data-aos-duration="2000"
                         key={index}
-                        className="flex items-center justify-center w-full md:w-auto  lg:w-4/5 gap-3 bg-white rounded-full shadow-sm border border-gray-200 
+                        className="flex items-center gap-3 bg-white rounded-full shadow-sm border border-gray-200 
                        py-2 px-4 cursor-pointer hover:shadow-md hover:bg-[#07A698] transition-all ease-in-out"
                     >
                         <div className="bg-white p-3 rounded-full">

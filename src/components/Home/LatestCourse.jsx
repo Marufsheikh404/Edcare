@@ -36,7 +36,7 @@ const LatestCoursePage = () => {
                 <div data-aos="fade-up" data-aos-duration="2000" className="flex flex-wrap gap-4 items-center justify-center mb-10">
                     <button
                         data-aos="fade-up" data-aos-duration="2000"
-                        className={`btn rounded-full px-6 py-2 ${activeCategory === null ? 'bg-[#07A698] text-white' : 'bg-white text-black'}`}
+                        className={`btn rounded-full px-6 py-2 ${activeCategory === null ? 'bg-[#07A698] text-white border border-gray-200' : 'bg-white text-black border border-gray-200'}`}
                         onClick={() => setActiveCategory(null)}
                     >
                         All
@@ -44,7 +44,7 @@ const LatestCoursePage = () => {
                     {categories?.map(category => (
                         <button
                             key={category.id}
-                            className={`btn rounded-full px-6 py-2 ${activeCategory === category.id ? 'bg-[#07A698] text-white' : 'bg-white text-black'}`}
+                            className={`btn rounded-full px-6 py-2 ${activeCategory === category.id ? 'bg-[#07A698] text-white border border-gray-200' : 'bg-white text-black border border-gray-200'}`}
                             onClick={() => setActiveCategory(category.id)}
                         >
                             {category.category}
@@ -53,10 +53,10 @@ const LatestCoursePage = () => {
                 </div>
 
                 {/* COURSE DATA */}
-                <div className="grid gap-10 grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     {filteredCourses?.map((c) => (
-                        <div data-aos="fade-up" data-aos-duration="3000" key={c?.id}>
-                            <div className="card w-full h-[500] shadow-md rounded-2xl overflow-hidden bg-white hover:shadow-xl transition flex flex-col">
+                        <div data-aos="fade-up" data-aos-duration="1000" key={c?.id}>
+                            <div className="card w-80 h-[500] shadow-md rounded-2xl overflow-hidden bg-white hover:shadow-xl transition ">
                                 <figure className="h-48 w-full relative bg-gray-100 overflow-hidden">
                                     <Image
                                         src={c?.thumbnail}
@@ -99,11 +99,11 @@ const LatestCoursePage = () => {
                                         </div>
                                     </div>
 
-                                    <div className="inline-block border-b border-gray-300 pb-1 text-sm mb-3">
+                                    <div className="inline-block border-b border-gray-300 pb-1 text-sm mb-2">
                                         ⭐⭐⭐⭐⭐⭐ {c?.rating}k
                                     </div>
 
-                                    <div className="flex items-center justify-between mt-auto text-sm">
+                                    <div className="flex items-center justify-between text-sm">
                                         <h1 className="font-semibold text-gray-800">Price: $ {c?.price}</h1>
                                         <Link href={`/details/${c?.id}`}>
                                             <button className="relative flex items-center gap-2 px-4 py-2 rounded-full font-semibold text-gray-800 overflow-hidden group border border-gray-300">
