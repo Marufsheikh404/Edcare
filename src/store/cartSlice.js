@@ -3,8 +3,7 @@ import { toast } from "react-toastify";
 
 const initialState = {
     items: [],
-    totalQuantity: 0,
-    totalAmount: 0
+    totalQuantity: 0
 };
 
 const cartSlice = createSlice({
@@ -25,7 +24,6 @@ const cartSlice = createSlice({
             }
             // update
             state.totalQuantity = state.items.reduce((s, i) => s + i.quantity, 0);
-            state.totalAmount = state.items.reduce((s, i) => s + i.price * i.quantity, 0);
         }
     }
 });
