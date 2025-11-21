@@ -9,6 +9,7 @@ import { RiShieldCheckLine } from 'react-icons/ri';
 import { TiArrowRightOutline } from 'react-icons/ti';
 import { useDispatch } from 'react-redux';
 
+
 const ShopDetailsPage = () => {
     const dispatch = useDispatch();
     const { id } = useParams();
@@ -18,7 +19,7 @@ const ShopDetailsPage = () => {
         <div>
             <div className="max-w-6xl mx-auto px-6 py-6">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-                    
+
                     <div className="lg:col-span-5 bg-gray-50 p-6 rounded -translate-y-6">
                         <div className="relative">
                             {findProduct?.badge && (
@@ -76,9 +77,9 @@ const ShopDetailsPage = () => {
                             </ul>
                         </div>
 
-                        {/* actions */}
+
                         <div className="relative mt-8 flex flex-col sm:flex-row items-center gap-4">
-                            <button onClick={()=>dispatch(addItem({id:findProduct?.id}))} className="group relative flex-1 border border-gray-300 rounded-full py-3 px-6 text-sm font-medium overflow-hidden">
+                            <button onClick={() => dispatch(addItem({ id: findProduct?.id }))} className="group relative flex-1 border border-gray-300 rounded-full py-3 px-6 text-sm font-medium overflow-hidden">
 
                                 <span className="absolute inset-0 bg-linear-to-r from-[#39B8AD] to-[#2fa79b] 
                                 scale-x-0 group-hover:scale-x-100 
