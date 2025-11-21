@@ -70,7 +70,7 @@ const Navber = () => {
                                 { name: "Home", path: "/" },
                                 { name: "Course", path: "/course" },
                                 { name: "Shops", path: "/shop" },
-                                { name: "Pages", path: "/pages" },
+                                { name: "Pages", path: "/picing" },
                                 { name: "Blogs", path: "/blogs" },
                                 { name: "Contact", path: "/contact" },
                             ].map((item, i) => (
@@ -102,7 +102,7 @@ const Navber = () => {
                                 { name: "Home", path: "/" },
                                 { name: "Course", path: "/course" },
                                 { name: "Shops", path: "/shop" },
-                                { name: "Pages", path: "/pages" },
+                                { name: "Pages", path: "/picing" },
                                 { name: "Blogs", path: "/blogs" },
                                 { name: "Contact", path: "/contact" },
                             ].map((item, i) => (
