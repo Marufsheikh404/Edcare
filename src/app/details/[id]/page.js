@@ -10,7 +10,7 @@ const DetailsPage = () => {
     const findCourse = courses?.find(item => item?.id === Number(id));
 
     return (
-        <div className="shadow-md rounded-2xl overflow-hidden bg-[#E8EFF6] hover:shadow-2xl transition flex items-center gap-8 p-4">
+        <div className="shadow-md rounded-2xl overflow-hidden bg-[#E8EFF6] hover:shadow-2xl transition flex flex-col lg:flex-row items-center gap-8 p-4">
             {/* Left: Image */}
             <div className="w-full">
                 <Image

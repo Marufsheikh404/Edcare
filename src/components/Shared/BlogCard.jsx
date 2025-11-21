@@ -49,7 +49,7 @@ const BlogCard = ({ blog }) => {
                 </div>
                 <div className="mt-4 flex justify-start">
                     <Link href={`/blogDetails/${blog?.id}`}>
-                        <button className="relative flex items-center gap-2 px-4 py-2 rounded-full font-semibold text-gray-800 overflow-hidden group border border-gray-300">
+                        <button className="relative flex items-center gap-2 px-4 py-2 rounded-full font-semibold text-gray-800 overflow-hidden group border border-gray-300 cursor-pointer">
                             <span className="absolute inset-0 bg-linear-to-r from-[#39B8AD] to-[#2fa79b] scale-x-0 group-hover:scale-x-100 transform origin-left transition-transform duration-400 rounded-full z-0"></span>
 
                             <span className="relative z-10 flex items-center group-hover:text-white gap-2">
