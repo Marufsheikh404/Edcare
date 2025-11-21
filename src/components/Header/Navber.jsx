@@ -44,7 +44,7 @@ const Navber = () => {
     }, []);
 
     return (
-        <>
+        <div>
             <div style={{ height: isScrolling ? navHeight : 0 }} aria-hidden="true" />
 
             <header
@@ -62,9 +62,9 @@ const Navber = () => {
                         <h1>Categories</h1>
                     </div>
 
-                    <p className="border-r h-7 border-gray-500 hidden md:block md:-translate-x-7"></p>
+                    <p className="border-r h-7 border-gray-500 hidden md:block md:-translate-x-15"></p>
 
-                    <div className="hidden md:block md:-translate-x-15">
+                    <div className="hidden md:block md:-translate-x-30">
                         <ul className="flex items-center gap-10 font-semibold text-lg">
                             {[
                                 { name: "Home", path: "/" },
@@ -115,7 +115,7 @@ const Navber = () => {
                     </div>
                 )}
             </header>
-        </>
+        </div>
     );
 };
 
