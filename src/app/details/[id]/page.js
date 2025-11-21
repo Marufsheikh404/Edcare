@@ -13,7 +13,7 @@ const DetailsPage = () => {
     const findCourse = courses?.find(item => item?.id === Number(id));
 
     return (
-        <div className="shadow-md rounded-2xl overflow-hidden bg-[#E8EFF6] hover:shadow-2xl transition flex flex-col lg:flex-row items-center gap-8 p-4">
+        <div className="shadow-md rounded-2xl overflow-hidden bg-[#E8EFF6] hover:shadow-2xl transition flex flex-col lg:flex-row items-center gap-4 p-4">
             {/* Left: Image */}
             <div className="w-full">
                 <Image
@@ -21,7 +21,7 @@ const DetailsPage = () => {
                     height={200}
                     src={findCourse?.thumbnail}
                     alt={findCourse?.title || "image"}
-                    className="object-cover w-96 h-auto rounded-xl"
+                    className="object-cover w-[450px] h-auto rounded-xl"
                 />
             </div>
 
@@ -45,7 +45,6 @@ const DetailsPage = () => {
                 <p className="text-sm text-gray-500 font-semibold">Views: {findCourse?.views}</p>
 
 
-                {/* Instructor */}
                 <div className="flex items-center gap-2">
                     <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-200">
                         {findCourse?.instructor?.avatar && (
@@ -73,7 +72,6 @@ const DetailsPage = () => {
                 <p className="font-semibold text-gray-800 text-sm">Price: $ {findCourse?.price}</p>
 
 
-                {/* Add to Cart button - Left bottom */}
                 <div className="mt-auto pt-4">
                     <button onClick={() => dispatch(addItem({ id: findCourse?.id }))} className="cursor-pointer bg-[#07A698] text-white px-5 py-2 rounded-lg text-sm hover:bg-[#068a80] transition">
                         Add to Cart
