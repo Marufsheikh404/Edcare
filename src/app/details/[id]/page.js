@@ -3,8 +3,10 @@ import AuthContext from '@/context/AuthContext';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import React, { useContext } from 'react';
+import { useDispatch } from 'react-redux';
 
 const DetailsPage = () => {
+    const dispatch = useDispatch();
     const { id } = useParams();
     const { courses } = useContext(AuthContext);
     const findCourse = courses?.find(item => item?.id === Number(id));
@@ -54,7 +56,7 @@ const DetailsPage = () => {
                                 className="object-cover w-full h-full"
                             />
                         )}
-                    </div>  
+                    </div>
                     <div>
                         <p className="font-medium text-xs">{findCourse?.instructor?.name}</p>
                         <p className="text-[10px] text-gray-500">{findCourse?.instructor?.role}</p>
@@ -72,7 +74,7 @@ const DetailsPage = () => {
 
                 {/* Add to Cart button - Left bottom */}
                 <div className="mt-auto pt-4">
-                    <button className="cursor-pointer bg-[#07A698] text-white px-5 py-2 rounded-lg text-sm hover:bg-[#068a80] transition">
+                    <button onClick={() => dispatch(addItem({ id: findCourse?.id }))} className="cursor-pointer bg-[#07A698] text-white px-5 py-2 rounded-lg text-sm hover:bg-[#068a80] transition">
                         Add to Cart
                     </button>
                 </div>
