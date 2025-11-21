@@ -8,22 +8,25 @@ import { GiSelfLove } from "react-icons/gi";
 import { PiShoppingCartThin } from "react-icons/pi";
 import { FiSearch } from "react-icons/fi";
 import logo from '../../images/icons/logo.png'
+import { useSelector } from "react-redux";
 
 export default function MiddleHeader() {
     const [catOpen, setCatOpen] = useState(false);
+    const totalQuantity = useSelector((state) => state.cart.totalQuantity)
+    
 
     return (
         <header className="w-full bg-white shadow-sm">
             <div className="max-w-7xl mx-auto px-4 py-1 flex items-center justify-between gap-4">
 
-          
+
                 <div className="flex items-center gap-4 min-w-0">
-               
+
                     <div className="relative w-36 h-12 md:w-38 md:h-14">
                         <Image src={logo} alt="logo" fill style={{ objectFit: "contain" }} priority />
                     </div>
 
-                  
+
                     <div
                         className="relative hidden md:flex items-center gap-2 select-none"
                         onMouseEnter={() => setCatOpen(true)}
@@ -38,7 +41,7 @@ export default function MiddleHeader() {
                             />
                         </div>
 
-                       
+
                         <ul
                             className={`absolute left-0 top-full mt-2 w-56 bg-white border border-gray-100 rounded-lg shadow-lg overflow-hidden z-20 transition-all duration-200
                        ${catOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
@@ -50,7 +53,7 @@ export default function MiddleHeader() {
                     </div>
                 </div>
 
-               
+
                 <div className="flex-1 px-4">
                     <form className="w-full">
                         <label className="relative block">
@@ -68,7 +71,7 @@ export default function MiddleHeader() {
                     </form>
                 </div>
 
-               
+
                 <div className="flex items-center gap-3">
                     <button
                         aria-label="Wishlist"
@@ -82,6 +85,7 @@ export default function MiddleHeader() {
                         className="relative p-2 rounded-full border border-gray-200 hover:shadow-sm transition bg-white"
                     >
                         <PiShoppingCartThin size={20} className="text-[#2FA79B]" />
+                        <div className="absolute top-0 right-0 text-xs bg-[#2FA79B] rounded-full w-4 h-4">{totalQuantity}</div>
                     </button>
 
                     <Link

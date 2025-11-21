@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import AuthProvider from "@/providers/AuthProvider";
 import InitialLoaderWrapper from "@/components/InitialLoaderWrapper";
 import Providers from "./providers";
+import { ToastContainer } from "react-toastify";
 
 
 
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
               <Header />
               <main className="max-w-7xl mx-auto py-2 px-4">
                 {children}
+                <ToastContainer position="top-right" autoClose={1500} />
               </main>
               <NewsletterFooter />
             </AuthProvider>

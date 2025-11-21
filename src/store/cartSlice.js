@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { toast } from "react-toastify";
 
 const initialState = {
     items: [],
@@ -15,13 +16,16 @@ const cartSlice = createSlice({
             const existing = state.items.find(i => i.id === newItem.id);
 
             if (existing) {
-                existing.quantity += 1;
-            } else {
-                state.items.push({ ...newItem, quantity: 1 });
+                toast.warning("This item is already in your cart!");
+                return;
             }
-
+            else {
+                state.items.push({ ...newItem, quantity: 1 });
+                toast.success("Added to Cart!");
+            }
+            // update
             state.totalQuantity = state.items.reduce((s, i) => s + i.quantity, 0);
-            state.totalAmount = state.items.reduce((s, i) => s + i.price * i.quantity,0);
+            state.totalAmount = state.items.reduce((s, i) => s + i.price * i.quantity, 0);
         }
     }
 });

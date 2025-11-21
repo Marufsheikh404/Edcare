@@ -1,5 +1,6 @@
 "use client";
 import AuthContext from '@/context/AuthContext';
+import { addItem } from '@/store/cartSlice';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import React, { useContext } from 'react';
