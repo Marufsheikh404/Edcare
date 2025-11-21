@@ -41,7 +41,7 @@ const ShopPage = () => {
                         onClick={() => setOpen(prev => !prev)}
                         aria-haspopup="true"
                         aria-expanded={open}
-                        className="bg-[#2FA79B] text-white px-4 py-2 rounded-xl"
+                        className="bg-[#2FA79B] text-white font-semibold px-4 py-2 rounded-xl"
                     >
                         Sort: {sortType === 'reviews' ? 'Reviews' :
                             sortType === 'title' ? 'Title' :
@@ -51,34 +51,34 @@ const ShopPage = () => {
                     </button>
 
                     {open && (
-                        <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg border rounded z-10 px-2">
+                        <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg border border-gray-200 rounded z-10 px-2">
                             <ul className="text-sm">
                                 <li
-                                    className="p-2 hover:bg-gray-100 cursor-pointer"
+                                    className="p-2 font-semibold hover:bg-[#2FA79B] rounded-md my-1 cursor-pointer"
                                     onClick={() => handleSort('reviews')}
                                 >
                                     Reviews (High → Low)
                                 </li>
                                 <li
-                                    className="p-2 hover:bg-gray-100 cursor-pointer"
+                                    className="p-2 font-semibold hover:bg-[#2FA79B] rounded-md my-1 cursor-pointer"
                                     onClick={() => handleSort('rating')}
                                 >
                                     Rating (High → Low)
                                 </li>
                                 <li
-                                    className="p-2 hover:bg-gray-100 cursor-pointer"
+                                    className="p-2 font-semibold hover:bg-[#2FA79B] rounded-md my-1 cursor-pointer"
                                     onClick={() => handleSort('title')}
                                 >
                                     Title (A → Z)
                                 </li>
                                 <li
-                                    className="p-2 hover:bg-gray-100 cursor-pointer"
+                                    className="p-2 font-semibold hover:bg-[#2FA79B] rounded-md my-1 cursor-pointer"
                                     onClick={() => handleSort('price-low')}
                                 >
                                     Price (Low → High)
                                 </li>
                                 <li
-                                    className="p-2 hover:bg-gray-100 cursor-pointer"
+                                    className="p-2 font-semibold hover:bg-[#2FA79B] rounded-md my-1 cursor-pointer"
                                     onClick={() => handleSort('price-high')}
                                 >
                                     Price (High → Low)
