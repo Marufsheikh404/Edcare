@@ -69,7 +69,7 @@ const Navber = () => {
                             {[
                                 { name: "Home", path: "/" },
                                 { name: "Course", path: "/course" },
-                                { name: "Shops", path: "/shops" },
+                                { name: "Shops", path: "/shop" },
                                 { name: "Pages", path: "/pages" },
                                 { name: "Blogs", path: "/blogs" },
                                 { name: "Contact", path: "/contact" },
@@ -101,7 +101,7 @@ const Navber = () => {
                             {[
                                 { name: "Home", path: "/" },
                                 { name: "Course", path: "/course" },
-                                { name: "Shops", path: "/shops" },
+                                { name: "Shops", path: "/shop" },
                                 { name: "Pages", path: "/pages" },
                                 { name: "Blogs", path: "/blogs" },
                                 { name: "Contact", path: "/contact" },

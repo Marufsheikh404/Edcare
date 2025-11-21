@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "author": "Andrew Collins",
+        "title": "The Creator Mindset",
+        "image": "https://i.ibb.co.com/4LChsPj/10001.png",
+        "rating": 5,
+        "reviews": 15,
+        "oldPrice": 170,
+        "newPrice": 147
+    },
+    {
+        "id": 2,
+        "author": "Sarah James",
+        "title": "Build Your Future",
+        "image": "https://i.ibb.co.com/8LD85W4x/10002.png",
+        "rating": 4,
+        "reviews": 22,
+        "oldPrice": 150,
+        "newPrice": 120
+    },
+    {
+        "id": 3,
+        "author": "Michael Brown",
+        "title": "Mastering Habits",
+        "image": "https://i.ibb.co.com/xSd9NwDT/10003.png",
+        "rating": 5,
+        "reviews": 40,
+        "oldPrice": 200,
+        "newPrice": 165
+    },
+    {
+        "id": 4,
+        "author": "Laura Smith",
+        "title": "Design Thinking",
+        "image": "https://i.ibb.co.com/Nds0JvR4/10004.png",
+        "rating": 4,
+        "reviews": 12,
+        "oldPrice": 180,
+        "newPrice": 140
+    },
+    {
+        "id": 5,
+        "author": "Kevin Watson",
+        "title": "Focus and Grow",
+        "image": "https://i.ibb.co.com/RTdKRwK8/10008.png",
+        "rating": 5,
+        "reviews": 30,
+        "oldPrice": 160,
+        "newPrice": 130
+    },
+    {
+        "id": 6,
+        "author": "Emma Carter",
+        "title": "Start Small Think Big",
+        "image": "https://i.ibb.co.com/p73t9Pr/10006.png",
+        "rating": 4,
+        "reviews": 18,
+        "oldPrice": 190,
+        "newPrice": 150
+    },
+    {
+        "id": 7,
+        "author": "Daniel Green",
+        "title": "The Power Shift",
+        "image": "https://i.ibb.co.com/278QDTxG/10007.png",
+        "rating": 5,
+        "reviews": 28,
+        "oldPrice": 210,
+        "newPrice": 175
+    },
+    {
+        "id": 8,
+        "author": "Sophia Turner",
+        "title": "Mind Reset",
+        "image": "https://i.ibb.co.com/RTdKRwK8/10008.png",
+        "rating": 4,
+        "reviews": 10,
+        "oldPrice": 140,
+        "newPrice": 110
+    },
+    {
+        "id": 9,
+        "author": "James Lee",
+        "title": "No Limits",
+        "image": "https://i.ibb.co.com/p73t9Pr/10006.png",
+        "rating": 5,
+        "reviews": 33,
+        "oldPrice": 175,
+        "newPrice": 149
+    },
+    {
+        "id": 10,
+        "author": "Grace Miller",
+        "title": "Unlock Your Brain",
+        "image": "https://i.ibb.co.com/p73t9Pr/10006.png",
+        "rating": 5,
+        "reviews": 20,
+        "oldPrice": 160,
+        "newPrice": 135
+    }
+]
