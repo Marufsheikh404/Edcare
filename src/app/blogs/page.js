@@ -7,6 +7,7 @@ import cricel from '../../images/shadow/cricel.png'
 import cricel2 from '../../images/shadow/cricle2.png'
 import { useEffect, useState } from 'react';
 import BlogCard from '@/components/Shared/BlogCard';
+import Loader from '@/components/Loader';
 
 
 const BlogPage = () => {
@@ -31,6 +32,10 @@ const BlogPage = () => {
         loadData();
         return () => { mounted = false; };
     }, [])
+
+    if(Loading){
+        return <Loader></Loader>
+    }
 
 
     return (
