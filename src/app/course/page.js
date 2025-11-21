@@ -25,7 +25,7 @@ const CoursePage = () => {
     }, []);
 
     return (
-        <div className="py-10 px-4 sm:px-6 lg:px-12">
+        <div className="py-4">
             {/* BANNER */}
             <div className="relative w-full">
                 <div className="relative w-full h-64 sm:h-80 lg:h-[450px]">
@@ -52,7 +52,7 @@ const CoursePage = () => {
                     alt="cricel"
                     width={120}
                     height={140}
-                    className="pointer-events-none absolute left-1/3 top-40 sm:top-48 lg:top-60 z-10"
+                    className="pointer-events-none absolute left-1/3 top-40 sm:top-48 lg:top-60 z-10 translate-y-10.5 lg:translate-y-39.5"
                 />
 
                 <Image
@@ -60,15 +60,15 @@ const CoursePage = () => {
                     alt="cricel2"
                     width={160}
                     height={160}
-                    className="pointer-events-none absolute right-0 top-0 z-10"
+                    className="pointer-events-none absolute right-0 top-0 z-10 "
                 />
 
                 <div className="absolute top-20 sm:top-24 lg:top-32 left-4 sm:left-10 lg:left-20 z-10 max-w-4xl">
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900">
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 translate-x-25">
                         Courses Page
                     </h1>
 
-                    <div className="mt-3 flex flex-wrap items-center gap-2 text-sm sm:text-base">
+                    <div className="mt-3 flex flex-wrap items-center gap-2 text-sm sm:text-base translate-x-35">
                         <Link href="/" className="font-semibold hover:text-[#2FA79B]">Home</Link>
                         <span>/</span>
                         <span className="font-semibold text-[#2FA79B]">Courses Page</span>
@@ -90,6 +90,7 @@ const CoursePage = () => {
                         Welcome To Online Education
                     </p>
                 </div>
+
 
                 <div className="mt-6" data-aos="fade-up" data-aos-duration="2000">
                     <SectionTitle title="Explore Featured Courses" />
