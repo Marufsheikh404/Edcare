@@ -53,9 +53,9 @@ const LatestCoursePage = () => {
                 </div>
 
                 {/* COURSE DATA */}
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
                     {
-                        filteredCourses.slice(0,3).map(c => (
+                        filteredCourses.slice(0,4).map(c => (
                             <div data-aos="fade-up" data-aos-duration="1000" key={c?.id}>
                                 <div className="card w-80 h-[495] shadow-md rounded-2xl overflow-hidden bg-white hover:shadow-xl transition ">
                                     <figure className="h-48 w-full relative bg-gray-100 overflow-hidden">
